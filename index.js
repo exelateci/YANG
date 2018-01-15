@@ -3,7 +3,7 @@ var animals = require('./dictionary/animals');
 var professions = require('./dictionary/professions');
 
 function getRandom(limit) {
-  return Math.floor(Math.random() * limit)
+  return Math.floor(Math.random() * limit - 1)
 }
 
 module.exports.generate = function generate(opts) {
